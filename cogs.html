@@ -1,0 +1,153 @@
+
+<html>
+  <head>
+    <title>Cost of Goods Sold</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/homepage.css">
+    <link rel="icon" type="image/png" href="images/Woodruff.png">
+    <style>
+      body {
+        font-family: Arial;
+        background-color: rgb(240, 240, 240);
+        margin: 0;
+      }
+
+      nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        padding-left: 0;
+        padding-top: 0;
+      }
+
+      .centered {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .link {
+        background-color: rgb(170, 137, 246);
+        font-size: 24px;
+        padding: 7.5px;
+        border-radius: 5px;
+        color: black;
+        text-decoration: none;
+        transition: background-color, color .5s;
+        margin-left: 0;
+        border: none;
+      }
+
+      .link:hover {
+        background-color:rgb(76, 21, 202);
+        color: white;
+      }
+
+      .page-title {
+        font-weight: 700;
+        font-size: 30px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+      }
+
+      .header {
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 10px;
+        margin-top: 20px;
+      }
+
+      a:hover {
+        color: rgb(39, 71, 39);
+      }
+
+      .main-body {
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .image-container {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      img {
+        border-radius: 20px;
+        width: 45%;
+      }
+
+      table, th, td {
+        border: 3px solid black;
+        border-collapse: collapse;
+        font-size: 24px;
+      }
+
+      th, td {
+        width: 150px;
+      }
+
+    </style>
+  </head> 
+  <body>
+    <p class="page-title">Cost of Goods Sold</p>
+    <hr>
+    <nav>
+      <ul>
+        <li><a class="link" href="home.html">Home</a></li>
+        <li><a class="link" href="about.html">About</a></li>
+        <li><a class="link" href="activities.html">More Content</a></li>
+      </ul>
+    </nav>
+    <hr>
+    <p class="header">Overview</p>
+    <p class="main-body">Cost of Goods Sold (<mark>COGS</mark>) is an interesting business metric that is directly tied in with the products and/or services being sold. According to Investopedia, COGS is the total amount
+    a business pays for the costs directly tied to selling a product or offering a service. Typically, COGS is recorded on the income statement as an expense right below the Revenues sections. Revenues minus
+    COGS is often referred to as Gross Profit.</p>
+    <p class="main-body">There are several formulas for calculating COGS. The most widely used formula is as follows: Starting Inventory + Purchases - Ending Inventory = COGS. Where starting inventory is the value of inventory at the
+    start of the accounting period. Purchases are the items bought for the sale to customers. And ending inventory is the value of the inventory at the end of the accounting period.</p>
+    <p class="main-body">The value of COGS will change depending on the inventory holding system you have in place. There are two widely used inventory holding systems: Last in First Out (LIFO) Inventory and First in First Out (FIFO) Inventory. In a FIFO
+    system the earliest goods in, will be the first ones out. This might, for example, be a good holding system for a distributor of perishable food items. In a LIFO system the latest goods in, will be the first ones out. This might, for example, be a good
+    holding system for a supplier of gravel, where the top of the pile is often excavated first. Businesses have the option to choose between LIFO and FIFO. However, permission does need to be granted by the IRS for use of a LIFO system.</p>
+    <p class="main-body"><b>Example Problem</b> - We have the following <u>purchases</u> of lumber completed by Ridge Construction Associates for the month of March:</p>
+    <table class="centered">
+      <tr>
+        <th>Date</th>
+        <th>Units</th>
+        <th>Price per Unit</th>
+        <th>Total Cost</th>
+      </tr>
+      <tr>
+        <td>3/1/24</td>
+        <td>150</td>
+        <td>$50</td>
+        <td>$7,500</td>
+      </tr>
+      <tr>
+        <td>3/14/24</td>
+        <td>300</td>
+        <td>$60</td>
+        <td>$18,000</td>
+      </tr>
+      <tr>
+        <td>3/31/24</td>
+        <td>250</td>
+        <td>$65</td>
+        <td>$16,250</td>
+      </tr>
+    </table>
+    <p class="main-body">Ridge Construction Associates uses a FIFO inventory system. And they end up selling 500 pieces of lumber to construction companies. Their beginning inventory is $65,000 and their ending inventory is $50,000. Calculate
+    COGS for Ridge Construction Associates with this provided information.</p>
+    <hr>
+    <p class="main-body">Because Ridge Construction Associates is using a FIFO system all 150 purchases on 3/1/24 and 300 purchases on 3/14/24 will be used. Only 50 of the purchases on 3/31/24 will be used because we have
+    reached that total amount of inventory sold: 150 + 300 + 50 = 500. Therefore we can do the following: $7,500 + $18,000 + (50 * $65) = $28,750. $28,750 is the cost of our purchases for the month under FIFO.</p> 
+    <p class="main-body">We can now move onto using the COGS formula plugging
+    in what we have: $65,000 (beginning inventory) + $28,750 (purchases) - $50,000 (ending inventory) = $43,750 (COGS). The COGS for Ridge Construction Associates during the month of March is <mark>$43,750</mark>.</p>
+    <hr>
+    <p class="main-body">Computing the COGS for a service oriented company is similar to that of an inventory based one. This confused me for a while, as it's not trivial to do this for this type of company. Instead of computing the cost of buying inventory you are using things like direct labor, materials, and shipping expenses
+    in the calculation.</p>
+    <p class="main-body">This was a general overview to get you more familiar with COGS. There are plenty of resources online about this if you need more information or activities. <a href="activities.html">Click here</a> to return to the activities page.</p>
+  </body>
+</html>
